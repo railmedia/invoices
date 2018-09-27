@@ -1,0 +1,7 @@
+{
+    "require": {
+        "dompdf/dompdf": "^0.8.2",
+        "components/font-awesome": "^5.0",
+        "components/jqueryui": "^1.12"
+    }
+}

@@ -1,0 +1,343 @@
+body, html {margin:0; padding:0;}
+body {
+	background:#575757;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:17px;
+}
+body.invoice {background:#fff;}
+
+img {border:0;}
+input[type="submit"],
+button {background:#680000; font-size:14px; border:0; color:#fff; padding:5px 10px; cursor:pointer; }
+.clear {clear:both;}
+
+input[type="text"],
+input[type="password"] {padding:5px; font-size:14px; background:#fff; border:1px solid aliceblue;}
+
+.wrapper {
+	width:1000px;
+	min-height:768px;
+	height:100%;
+	margin:0px auto;
+	padding:10px;
+	background:#575757 url(../img/bg1.jpg) repeat-x;
+	font-size:14px;
+	color:#fff;
+}
+
+.wrapper.invoice {background:#fff; color:#000;}
+
+.wrapper a {color:#fff; text-decoration:underline;}
+.wrapper a:hover {color:#1f3f56;}
+
+.login_form {
+	margin:0px auto;
+	width:300px;
+	position:relative;
+	margin-top:40%;
+}
+
+.section-center {text-align:center;}
+
+.login_form .login_form_block {text-align:center; margin-bottom:10px;}
+.login_form .login_form_block label {display:block; margin-top:5px; margin-bottom:10px; float:left; width:80px; text-align:left; color:#000; font-size:16px;}
+
+.add-edit-invoices .add-invoice-section {border-bottom:1px dashed #fff;}
+.add-edit-invoices .add-invoice-section .widget-row {width:50%; border-bottom:0; float:left;}
+.add-edit-invoices .add-invoice-section .widget-row label {width:20%; float:left; display:inline-block; font-size:16px;}
+.add-edit-invoices .add-invoice-section .widget-row .field {float:left; width:80%;}
+.add-edit-invoices .add-invoice-section .widget-row .field input,
+.add-edit-invoices .add-invoice-section .widget-row .field textarea {width:90%; font-family:Arial, Helvetica, sans-serif;}
+.add-edit-invoices .add-invoice-section .widget-row .field select {width:90%; font-family:Arial, Helvetica, sans-serif; padding:5px;}
+.add-edit-invoices .add-invoice-section .widget-row-full {width:100%; border:0;}
+.add-edit-invoices .add-invoice-section.section-bottom {border-bottom:0; margin:20px 0;}
+
+.top {background:#eff3f6; box-shadow:0 0 5px #fff; margin-bottom:50px;}
+.top ul {margin-bottom:0;}
+.top ul li,
+.top ul li ul li {background:#445c6c;}
+.top ul li:hover {background:#5c829b;}
+.top ul li a {border-left:1px solid #a2a2a2; border-top:1px solid transparent; border-bottom:1px solid transparent; color:#fff;}
+.top .top-menu {float:left;}
+.top .logout-menu {float:right;}
+.top .top-title {margin:9px 40px; vertical-align: middle; color:#000; position:absolute; left:45%;}
+.top .top-title h1 {margin:0;}
+
+.widget .widget-title,
+.widget .widget-title h2 {font-size:24px; color:#1f3f56; color:#fff; text-transform:uppercase; text-align:center;}
+.widget .widget-row {border-bottom:1px dashed #fff; padding:15px 0; font-size:16px;}
+#all-invoices .widget-row .widget-column {display:inline-block; position:relative;}
+#all-invoices .widget-row .widget-invoice-main {padding:0 20px; width:350px;}
+#all-invoices .widget-row .widget-invoice-client {padding:0 20px; width:170px;}
+#all-invoices .widget-row .widget-invoice-data {padding:0 20px; width:170px;}
+#all-invoices .widget-row .widget-invoice-actions a {padding-right:10px; font-size:20px; cursor:pointer;}
+#all-invoices .widget-row .widget-invoice-actions a.active {color:#1f3f56;}
+
+#last-invoices {width:300px; margin:0 auto;}
+#last-invoices .widget-row {text-align:center;}
+
+.invoice .wrapper {background:#fff;}
+.invoice a.titlu {color:#000; text-decoration:none; text-transform:uppercase;}
+
+#invoice-products-container .widget-row {width:100%; position:relative;}
+#invoice-products-container .widget-row .widget-row-actions {position:absolute; right:20px; top:15px; font-size:18px;}
+#invoice-products-container .widget-row .widget-row-actions a {color:#680000; cursor: pointer;}
+#invoice-products-container .widget-row .widget-row-actions a:hover {color:#fff;}
+#invoice-products-container label {float:none; width:100%;}
+#invoice-products-container .widget-row .widget-column {width:25%; float:left;}
+
+#populate-invoice {margin-top:20px;}
+#factura-adauga-produs {cursor:pointer;}
+.add-invoice-section.section-bottom {margin-top:20px;}
+
+#remove-bulk {display:none;}
+
+#products-vat-row.hidden,
+#invoice-vat-rate.hidden {display:none;}
+
+
+.widget-column-heading {font-weight:bold; text-align:center;}
+.widget-select-invoice {width:24px;}
+.widget-invoice-main {text-align:left;}
+.widget-invoice-actions {width:130px;}
+
+.widget-invoice-action {font-size:20px; margin-bottom:30px; margin-top:30px; width:auto; display:inline-block; cursor:pointer; position:relative;}
+.widget-invoice-action i {margin-right:10px; color:#000;}
+.widget-invoice-action a {text-decoration:none; color:#000; background:#fff; border-radius:10px; padding:10px;}
+.widget-invoice-action .config-generate-pdf {position:absolute; left:40%; top:40px; border:1px solid black;}
+.widget-invoice-action .config-generate-pdf i {margin-right:0; color:red;}
+
+.config-generate-pdf {background:#fff; color:#000; position:absolute; padding:10px; border-radius:10px; display:none; z-index:10; left:-10px; min-width: 200px;}
+.config-generate-pdf a {color:#000; text-align:center; font-size:16px; width: 90%; display: block;}
+.config-generate-pdf select {width:100%; margin:5px 0 10px 0; font-size:16px;}
+.config-generate-pdf .close-panel {color: red; position: absolute; right: -12px; top: -14px; background: #fff; padding: 3px; border-radius: 20px; border: 1px solid black; cursor:pointer;}
+
+.quick-view-panel {border:1px solid #fff; padding:10px; border-radius:10px; margin:10px 0; display:none; position:absolute; background:#445c6c; padding:10px; color:#fff; z-index:1000;}
+.quick-view-panel .quick-view-border-bottom {border-bottom:1px dashed #fff; display:block; width:100%; margin-bottom:5px; padding-bottom:5px;}
+.quick-view-panel .close-panel {color: red; position: absolute; right: -11px; top: -11px; background: #fff; padding: 3px; border-radius: 20px; border: 1px solid black; cursor:pointer;}
+
+.numefurnizor {
+border:1px solid #999999;
+float:left;
+min-height:176px;
+padding:5px;
+width:330px;
+}
+.titluserienumar {
+border:1px solid #999999;
+float:left;
+min-height:176px;
+padding:5px;
+text-align:center;
+width:330.33px;
+}
+.numeclient {
+border:1px solid #999999;
+float:left;
+min-height:176px;
+padding:5px;
+width:301.33px;
+}
+.tableserienumar {
+border:1px solid #666666;
+margin:30px auto 0;
+}
+.tablecontent {
+border-top:1px solid #666666;
+border-bottom:0;
+border-right:0;
+margin-top:10px;
+}
+.tablecontent2 {
+border:1px solid #666666;
+margin-top:50px;
+bottom:0;
+}
+.tablecontentcell {
+border-bottom:1px solid #000000;
+border-right:1px solid #000000;
+padding:5px;
+}
+
+.tablecontentcell.first-cell {border-left:1px solid #000;}
+.tablecontentcell.last-cell,
+.tablecontentcellright.last-cell {border-right:1px solid #000;}
+
+.tablecontentcellright {
+border-bottom:1px solid #000000;
+border-right:0px solid #000000;
+padding:5px;
+}
+.tablecontentcell2 {
+border-right:1px solid #999999;
+border-top:0px;
+border-bottom:0px;
+padding:5px;
+}
+.tablecontentcell3 {
+border-right:1px solid #999999;
+border-top:0px;
+border-bottom:1px solid #999999;
+padding:5px;
+}
+.tablecontentcell4 {
+border-right:0px solid #999999;
+border-top:0px;
+border-bottom:1px solid #999999;
+padding:5px;
+}
+.font {
+color:#000000;
+font-family:Arial,Helvetica,sans-serif;
+font-size:17px;
+}
+.fontsp {
+color:#000000;
+font-family:Arial,Helvetica,sans-serif;
+font-size:17px;
+}
+.font3 {
+color:#FFFFFF;
+font-family:Arial,Helvetica,sans-serif;
+font-size:18px;
+}
+.font2 {
+color:#000000;
+font-family:Arial,Helvetica,sans-serif;
+font-size:16px;
+}
+.titlu {
+color:#000000;
+font-family:Arial,Helvetica,sans-serif;
+font-size:20px;
+font-weight:bold;
+text-decoration:none;
+}
+a.titlu:hover {
+text-decoration:none;
+}
+.titlu2 {
+color:#000000;
+font-family:Arial,Helvetica,sans-serif;
+font-size:16px;
+font-weight:bold;
+padding-left:5px;
+}
+.padding {
+padding:5px;
+}
+.form {
+font-family:Arial,Helvetica,sans-serif;
+font-size:10px;
+height:15px;
+margin:0;
+}
+.content {
+width:100%;
+}
+.contentchitanta {
+width:100%;
+padding:5px;
+}
+.floatleft {
+	float:left;
+	}
+.floatright {
+	float:right;
+	}
+.font3 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFFFFF;
+	}
+.titlu {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#CCCCCC;
+	font-size:30px;
+}
+.titlu2 {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#1f3f56;
+	font-size:16px;
+	font-weight:bold;
+}
+.link {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFFFFF;
+	text-decoration:none;
+	}
+a.link:link {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFFFFF;
+	text-decoration:none;
+	}
+a.link:hover {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#1f3f56;
+	text-decoration:underline;
+}
+.linkselected {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#1f3f56;
+	text-decoration:none;
+	font-weight:bold;
+}
+.link2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#FFFFFF;
+	text-decoration:none;
+	}
+a.link2:link {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#FFFFFF;
+	text-decoration:none;
+	}
+a.link2:hover {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#1f3f56;
+	text-decoration:underline;
+	}
+.mainmenu {
+	height:57px;
+	background:#445c6c;
+	border:1px solid #1a2e3c;
+	margin:0px auto;
+	text-align:center;
+	}
+.bordertabel {
+	border-bottom:1px dashed #FFFFFF;
+}
+
+.notification {font-size:14px; text-align:center;}
+.notification.error {color:red;}
+
+
+.preloader {
+	display:inline-block;
+   	width:30px;
+	height:30px;
+	padding:0px;
+	border-radius:100%;
+	border:2px solid;
+	border-top-color:rgba(0,0,0, 0.65);
+	border-bottom-color:rgba(0,0,0, 0.65);
+	border-left-color:rgba(0,0,0, 0.15);
+	border-right-color:rgba(0,0,0, 0.15);
+	-webkit-animation: preloader 0.8s ease-in-out infinite alternate;
+	animation: preloader 0.8s ease-in-out infinite alternate;
+}
+@keyframes preloader {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+@-webkit-keyframes preloader {
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(360deg);}
+}
